@@ -341,12 +341,21 @@
 
   <section id="contact" class="contact fade-in">
     <h2>Contact Me</h2>
-    <form id="contactForm">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <form action="https://formsubmit.co/yourgmail@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+
+    <label>Name:</label>
+    <input type="text" name="name" required><br>
+
+    <label>Email:</label>
+    <input type="email" name="email" required><br>
+
+    <label>Message:</label>
+    <textarea name="message" required></textarea><br>
+
+    <button type="submit">Send</button>
+</form>
+
   </section>
 
   <footer class="fade-in">
